@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Composite App</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <!-- Entries -->
+    <div class="form-view">
+      <div class="form-view__input">
+        <div id="react-root"></div>
+      </div>
+      <div class="form-view__output">
+        <div id="vue-root"></div>
+      </div>
+    </div>
+    <!--  -->
+    <script type="module" src="/vue.bundle.js"></script>
+    <script type="module" src="/vendor.app.js"></script>
+    <script type="module" src="/react.bundle.js"></script>
+
+    <!-- Common Styles -->
+    <style>
+        .form-view{
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .form-view__input{
+            margin-bottom: 15px;
+        }
+    </style>
+  </body>
+</html>
